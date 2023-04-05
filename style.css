@@ -1,0 +1,35 @@
+.search {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .search form {
+    display: inline-block;
+  }
+  
+  .search input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  .search button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .book {
+    margin-bottom: 20px;
+  }
+  
+  .book h2 {
+    margin-bottom: 10px;
+  }
+  
