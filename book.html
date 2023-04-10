@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="book.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Book</h1>
+  </header>
+  <div class="cont">
+    <div class="card">
+      <div>
+        <h2 class="title" id="title">Book Title</h2>
+        <h3 class="author" id="author">Author Name</h3>
+        <!-- <p class="description">Book Description</p> -->
+        <p id="id"></p>
+      </div>
+
+  </div>
+
+  </div>
+  <!-- <div class="borrow">
+    <button class="modal-button">Borrow</button>
+    <div class="modal">
+      <div class="modal-content">
+        <h2>Enter Borrower Information</h2>
+        <form>
+          <label for="name"> Full Name:</label>
+          <input type="text" id="name" name="name"><br>
+    
+          <input type="submit" value="Submit">
+        </form>
+        <button class="close-button">Close</button>
+      </div>
+    </div>
+  </div> -->
+  <div class="wrapper">
+    <a href="#demo-modal" class="brrr">Borrow</a>
+</div>
+
+<div id="demo-modal" class="modal">
+    <div class="modal__content">
+      <h2>Enter Borrower Information</h2>
+      <form>
+        <label for="name"> Full Name:</label>
+        <input type="text" id="name" name="name"><br>
+  
+        <button type="submit" id="submit-button"> Submit</button>
+      </form>
+
+        <a href="#" class="modal__close">&times;</a>
+    </div>
+</div>
+
+   <h5>all books</h5>
+  <div class="tab">
+    <table id="my-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Publisher</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+      
+    </table>
+  </div>
+
+  <script src="libsys.js"></script>
+  <script src="script.js"></script>
+  <script src="repl.js"></script>
+</body>
+</html>

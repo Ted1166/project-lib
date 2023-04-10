@@ -3,6 +3,7 @@
 <head>
   <title>Book Library System</title>
   <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -11,55 +12,30 @@
       <input type="text" placeholder="Search for a book">
       <button type="submit">Search</button>
     </form>
-    <table>
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Publisher</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>The Great Gatsby</td>
-          <td>F. Scott Fitzgerald</td>
-          <td>Charles Scribner's Sons</td>
-          <td>Available</td>
-        </tr>
-        <tr>
-          <td>To Kill a Mockingbird</td>
-          <td>Harper Lee</td>
-          <td>J. B. Lippincott & Co.</td>
-          <td>Checked Out</td>
-        </tr>
-        <tr>
-            <td>1984</td>
-            <td>George Orwell</td>
-            <td>Secker & Warburg</td>
-            <td>Available</td>
-        </tr>
-        <tr>
-            <td>Animal Farm</td>
-            <td>George Orwell</td>
-            <td>Secker & Warburg</td>
-            <td>Checked Out</td>
-        </tr>
-        <tr>
-            <td>The Catcher in the Rye</td>
-            <td>J. D. Salinger</td>
-            <td>Little, Brown and Company</td>
-            <td>Checked Out</td>
-        </tr>
-        <tr>
-            <td>Brave New World</td>
-            <td>Aldous Huxley'</td>
-            <td>Chatto & Windus</td>
-            <td>Available</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="open">
+      <button id="open" class="ope">Go to Open Library</button>
+      <script>
+        $('#open').on('click', function() { window.location = `openlib.html`; });
+      </script>
+    </div>
+    <div class="tab">
+      <table id="my-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publisher</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+        
+      </table>
+    </div>
+
     <script src="script.js"></script>
+    <script src="libsys.js"></script>
   </div>
 </body>
 </html>

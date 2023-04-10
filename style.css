@@ -32,4 +32,7 @@
   .book h2 {
     margin-bottom: 10px;
   }
-  
+  tr:hover{
+    cursor: pointer;
+    background-color: #ccc;
+  }
