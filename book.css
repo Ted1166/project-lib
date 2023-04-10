@@ -1,0 +1,218 @@
+    
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin: 20px;
+        padding: 20px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+      
+      .card:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-5px);
+      }
+      
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .author {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #666666;
+      }
+      
+      .description {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #333333;
+        line-height: 1.5;
+      }
+      
+      .but {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #003366;
+      }
+
+      .borrow{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5em;
+      }
+      h1 {
+        text-align: center;
+        margin: 1em 0;
+      }
+
+      h5 {
+        text-align: center;
+        margin: 1em 0;
+      }
+
+  
+
+      .cont{
+        display: flex;
+        justify-content: center;
+      }
+
+      button{
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 0.5em;
+        font-size: 1em;
+        cursor: pointer;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      
+      .modal-content {
+        background-color: white;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        max-width: 500px;
+      }
+      
+      .close-button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      
+      .close-button:hover {
+        background-color: #3e8e41;
+      }
+      
+      .modal-button {
+        background-color: #008CBA;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      
+      .modal-button:hover {
+        background-color: #007ba7;
+      }
+      
+      /* Display the modal when the button is clicked */
+      .modal-button:focus + .modal {
+        display: block;
+      }
+      
+      /* Prevent click events on the modal from propagating to the button */
+      .modal-content {
+        cursor: default;
+      }
+      
+      .modal-content button {
+        cursor: pointer;
+      }
+      
+      .modal-content form {
+        cursor: auto;
+      }
+
+  
+  .wrapper a {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #d7ebff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color:#003366;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 3em;
+    margin-left: 3em;
+    font-weight: bold;
+  }
+  
+  .modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+  }
+  
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal__content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
+  }
+  
+  .modal__footer {
+    text-align: right;
+  
+
+  }
+  a {
+    color: #585858;
+  }
+
+  i {
+    color: #d02d2c;
+  }
+
+  .modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #585858;
+    text-decoration: none;
+  }
